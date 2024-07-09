@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#containerClothing,
+#containerAccessories {
+    display: grid;
+    grid-gap: 70px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#box {
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+}
+
+#box:hover {
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+
+#containerClothing img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#details {
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+#box a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+h2 {
+    color: rgb(3, 94, 94);
+}
+
+#filterSection {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.filter-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #dededf;
+    color: rgb(29, 29, 29);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filter-button.active {
+    background-color: rgb(29, 29, 29);
+    color: #dededf;
+}
+
+.filter-button:hover {
+    background-color: rgb(29, 29, 29);
+    color: #dededf;
+}
+
+.product-box {
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s; /* Added transform transition */
+}
+  
+  .product-link {
+    display: block; /* Ensure the link takes up the full width of its container */
+    overflow: hidden; /* Hide any overflow */
+  }
+  
+  .product-image {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    align-self: center; /* Center align the image */
+    margin-bottom: 10px; /* Example margin */
+  }
+  
+  .product-details {
+    flex: 1; /* Allow details div to grow and take up remaining space */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center content vertically */
+    padding: 10px; /* Example padding */
+    text-align: center; /* Center content */
+  }
+  
+  .product-details h3, .product-details h4, .product-details h2 {
+    margin: 0; /* Remove default margin */
+  }
+
+  .product-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Added translate effect */
+}
+
+.product-box:focus-within {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transform: translateY(-5px); /* Added translate effect */
+}
+  
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1070px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    #containerClothing,
+    #containerAccessories {
+        width: 95%;
+        grid-gap: 10px;
+    }
+}
+
+@media(max-width: 850px) {
+    h1 {
+        width: 80%;
+    }
+
+    #containerClothing,
+    #containerAccessories {
+        display: grid;
+        grid-gap: 70px 20px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+}
+
+@media(max-width: 650px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h1 {
+        width: 90%;
+    }
+
+    #filterSection {
+        width: 90%;
+    }
+
+    #containerClothing,
+    #containerAccessories {
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px) {
+    h1 {
+        width: 70%;
+    }
+
+    #filterSection {
+        width: 70%;
+    }
+
+    #containerClothing,
+    #containerAccessories {
+        width: 70%;
+    }
+}
+
+@media(max-width: 505px) {
+    h1 {
+        width: 80%;
+    }
+
+    #filterSection {
+        width: 80%;
+    }
+
+    #containerClothing,
+    #containerAccessories {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

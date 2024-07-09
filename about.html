@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> ABOUT | RoopRang </title>
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->
+<div id="1"></div>
+<script>
+    load("header.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(1).innerHTML = req.responseText;
+    }
+</script>
+
+<div id="aboutSection">
+    <div class="container">
+        <h1>About RoopRang</h1>
+        <p>Welcome to RoopRang, your number one source for all things beauty and cosmetics. We're dedicated to providing you the very best of beauty products, with an emphasis on quality, customer service, and uniqueness.</p>
+        <p>Founded in 2024 by three passionate women, Aditi, Rajvi, and Pal, RoopRang has come a long way from its beginnings. When Aditi, Rajvi, and Pal first started out, their passion for eco-friendly and high-quality cosmetics drove them to start their own business.</p>
+        <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+        
+        <h2>Our Mission</h2>
+        <p>At RoopRang, our mission is to empower women through beauty. We believe that beauty is not just about appearance, but about feeling confident and comfortable in your own skin. We are committed to offering products that are not only effective but also ethically produced and environmentally friendly.</p>
+
+        <h2>Our Vision</h2>
+        <p>Our vision is to become a leading brand in the beauty industry by continuously innovating and adapting to the needs of our customers. We strive to make beauty accessible to everyone, while maintaining our commitment to sustainability and ethical practices.</p>
+
+        <h2>Our Founders</h2>
+        <ul class="founders">
+            <li>Aditi</li>
+            <li>Rajvi</li>
+            <li>Pal</li>
+        </ul>
+        <p>Together, Aditi, Rajvi, and Pal bring a wealth of experience in the beauty industry and a shared vision of creating a brand that caters to the diverse beauty needs of women everywhere.</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div id="4"></div>
+<script>
+    load("footer.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+    }
+</script>
+</body>
+</html>
